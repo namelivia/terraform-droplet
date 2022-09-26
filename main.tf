@@ -8,7 +8,7 @@ terraform {
 }
 
 resource "digitalocean_ssh_key" "deployer" {
-  name   = "deployer-key"
+  name   = "droplet-key"
   public_key = "${var.ssh_key}"
 }
 
