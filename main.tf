@@ -7,10 +7,6 @@ terraform {
   }
 }
 
-provider "digitalocean" {
-  token = "${var.do_token}"
-}
-
 resource "digitalocean_ssh_key" "deployer" {
   name   = "deployer-key"
   public_key = "${var.ssh_key}"
