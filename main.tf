@@ -14,7 +14,7 @@ resource "digitalocean_ssh_key" "deployer" {
 
 resource "digitalocean_droplet" "namelivia" {
   image  = "ubuntu-18-04-x64"
-  name   = "namelivia"
+  name   = "${var.name}"
   region = "fra1"
   size   = "s-1vcpu-1gb"
   ssh_keys = [digitalocean_ssh_key.deployer.fingerprint]
