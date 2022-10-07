@@ -7,3 +7,8 @@ variable "name" {
   type = string
   description = "Name for the instance"
 }
+
+variable "key_name" {
+  type = string
+  description = "Name for the key"
+}
